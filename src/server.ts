@@ -2,7 +2,7 @@ import express from 'express';
 import App from './app';
 import HomeController from './controllers/home.controller';
 import AuthController from './controllers/auth.controller';
-// import ProtectedController from './controllers/protected-aws.controller';
+import ProtectedController from './controllers/protected.controller';
 
 import dotenv from "dotenv";
 
@@ -13,7 +13,7 @@ const app = new App({
   controllers: [
     new HomeController(),
     new AuthController(),
-    // new ProtectedController(),
+    new ProtectedController(),
   ],
   middlewares: [express.json()],
 });
