@@ -1,6 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
-/* eslint-disable consistent-return */
-/* eslint-disable camelcase */
 import * as jwt from 'jsonwebtoken';
 import { Request, Response, NextFunction } from 'express';
 import jwkToPem from 'jwk-to-pem';
