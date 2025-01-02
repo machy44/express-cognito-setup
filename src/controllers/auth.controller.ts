@@ -1,6 +1,6 @@
 import express, { Request, Response } from 'express';
 import { body, validationResult } from 'express-validator';
-import CognitoService from '../services/cognito.service';
+import CognitoService from '@services/cognito.service';
 
 export default class AuthController {
   public path = '/auth';
